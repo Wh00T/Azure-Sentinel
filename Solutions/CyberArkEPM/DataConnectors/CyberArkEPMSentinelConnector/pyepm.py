@@ -1,8 +1,3 @@
-"""
-Author: Steven Steiner <steven.steiner@cyberark.com>
-Version: 0.0.1
-Date Created: 6/10/2019 16:19
-"""
 import json, requests, urllib3, urllib
 from lxml import html
 
@@ -16,7 +11,7 @@ def epmAuth(dispatcher, username, password):
         The session timeout for all APIs is part of the session token and is defined by the
         Timeoutforinactivesession Server Configuration parameter.
         Args:
-            diapatcher (str): The EPM SaaS site to get version information from and perform the initial logon
+            dispatcher (str): The EPM SaaS site to get version information from and perform the initial logon
             username (str): Valid User ID with access to the Set(s)
             password (str): Password for the User ID logging into the Rest API
 
